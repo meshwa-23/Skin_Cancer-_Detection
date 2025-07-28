@@ -1,0 +1,72 @@
+h3 {
+    color: #f6f3f3;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    color: #f6f3f3;
+    font-size: 1rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer,
+#MainMenu {
+    visibility: hidden;
+}
+
+body {
+    background: linear-gradient(to right, #2889ce, #ac2451);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar glass effect */
+[data-testid="stSidebar"] {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Team container layout */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 40px auto;
+}
+
+/* Team member card */
+.team-member {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    height: 140px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Optional CTA button tweaks */
+/*
+button[kind="primary"] {
+    margin-top: 5%;
+    padding: 0 38% 0 39%;
+}
+*/
